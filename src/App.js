@@ -7,6 +7,11 @@ import Login from "./pages/Login";
 function App() {
   return (
     <Router>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/createpost">Create</Link>
+        <Link to="/login">Login</Link>
+      </nav>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/createpost" element={<Upload />}></Route>
